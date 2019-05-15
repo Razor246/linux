@@ -389,6 +389,7 @@ static int dce_v8_0_get_num_crtc(struct amdgpu_device *adev)
 	switch (adev->asic_type) {
 	case CHIP_BONAIRE:
 	case CHIP_HAWAII:
+	case CHIP_LIVERPOOL:
 		num_crtc = 6;
 		break;
 	case CHIP_KAVERI:
