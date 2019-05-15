@@ -697,7 +697,6 @@ int cik_sdma_ring_test(struct radeon_device *rdev,
 		radeon_ring_write(ring, 0xDEADBEEF);
 	}
 
-
 	radeon_ring_unlock_commit(rdev, ring, false);
 
 	for (i = 0; i < rdev->usec_timeout; i++) {
