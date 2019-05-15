@@ -2021,9 +2021,9 @@ radeon_add_atom_connector(struct drm_device *dev,
 						      &radeon_dp_connector_helper_funcs);
 			} else {
 			drm_connector_init(dev, &radeon_connector->base,
-						      &radeon_ps4_dp_connector_funcs, connector_type);
+				           &radeon_ps4_dp_connector_funcs, connector_type);
 			drm_connector_helper_add(&radeon_connector->base,
-						      &radeon_ps4_dp_connector_helper_funcs);
+					         &radeon_ps4_dp_connector_helper_funcs);
 			}
 
 			drm_object_attach_property(&radeon_connector->base.base,
